@@ -8,14 +8,6 @@
 
 import Foundation
 
-func changeSign(operand: Double) -> Double {
-	return -operand
-}
-
-func multiply(op1:Double, op2:Double) -> Double {
-	return op1*op2
-}
-
 struct CalculatorBrain {
 
 	private var accumulator: Double?
