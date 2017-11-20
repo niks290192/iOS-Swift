@@ -8,22 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FaceViewController: UIViewController {
 
 	@IBOutlet weak var faceView: FaceView! {
 		didSet {
 			let handlerPinch = #selector(faceView.changeScale(byReactingTo:))
 			let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handlerPinch)
 			faceView.addGestureRecognizer(pinchRecognizer)
-			let handlerTap = #selector(ViewController.toggleEyes(byReactingTo:))
+			let handlerTap = #selector(FaceViewController.toggleEyes(byReactingTo:))
 			let tapGesture = UITapGestureRecognizer(target: self, action: handlerTap)
 			tapGesture.numberOfTapsRequired = 1
 			faceView.addGestureRecognizer(tapGesture)
-			let handlerSwipeUp = #selector(ViewController.increaseHappiness)
+			let handlerSwipeUp = #selector(FaceViewController.increaseHappiness)
 			let swipeUpGesture = UISwipeGestureRecognizer(target: self, action: handlerSwipeUp)
 			swipeUpGesture.direction = .up
 			faceView.addGestureRecognizer(swipeUpGesture)
-			let handleSwipeDown = #selector(ViewController.decreaseHappiness)
+			let handleSwipeDown = #selector(FaceViewController.decreaseHappiness)
 			let swipeDownGesture = UISwipeGestureRecognizer(target: self, action: handleSwipeDown)
 			swipeDownGesture.direction = .down
 			faceView.addGestureRecognizer(swipeDownGesture)
