@@ -10,13 +10,13 @@ import Foundation
 
 struct DemoURL {
 
-	static let stanford = URL(string: "http://stanford.edu/about/images/intro_about.jpg")
+	static let stanford = URL(string: "https://www-media.stanford.edu/wp-content/uploads/2017/11/16141818/terman-splash-landscape-767x511.jpg")
 
 	static var NASA: Dictionary<String, URL> = {
 		let NASAURLStrings = [
-			"Cassini" : "http://www.jpl.nasa.gov/images/cassini/20090202/pia03993-full.jpg",
-			"Earth" : "http://www.nasa.gov/sites/default/files/wave_earth_mosaic_3.jpg",
-			"Saturn": "http://www.nasa.gov/sites/default/files/saturn_collage.jpg"
+			"Cassini" : "https://scontent-dft4-1.cdninstagram.com/t51.2885-15/e35/23969363_293160171203361_6891942185176924160_n.jpg",
+			"Earth" : "https://scontent-dft4-1.cdninstagram.com/t51.2885-15/e35/23969363_293160171203361_6891942185176924160_n.jpg",
+			"Saturn": "https://scontent-dft4-1.cdninstagram.com/t51.2885-15/e35/23969363_293160171203361_6891942185176924160_n.jpg"
 		]
 
 		var urls = Dictionary<String,URL>()

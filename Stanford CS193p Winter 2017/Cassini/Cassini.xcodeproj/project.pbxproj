@@ -13,6 +13,7 @@
 		95ADE91E1FC7166F0048B938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ADE91C1FC7166F0048B938 /* LaunchScreen.storyboard */; };
 		95ADE9271FC717540048B938 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ADE9261FC717540048B938 /* ImageViewController.swift */; };
 		95ADE9291FC73EB10048B938 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ADE9281FC73EB10048B938 /* DemoURL.swift */; };
+		95ADE92B1FC9AE710048B938 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ADE92A1FC9AE710048B938 /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		95ADE91F1FC7166F0048B938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95ADE9261FC717540048B938 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		95ADE9281FC73EB10048B938 /* DemoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		95ADE92A1FC9AE710048B938 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				95ADE91C1FC7166F0048B938 /* LaunchScreen.storyboard */,
 				95ADE9261FC717540048B938 /* ImageViewController.swift */,
 				95ADE9281FC73EB10048B938 /* DemoURL.swift */,
+				95ADE92A1FC9AE710048B938 /* CassiniViewController.swift */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				95ADE9271FC717540048B938 /* ImageViewController.swift in Sources */,
 				95ADE9141FC7166F0048B938 /* AppDelegate.swift in Sources */,
 				95ADE9291FC73EB10048B938 /* DemoURL.swift in Sources */,
+				95ADE92B1FC9AE710048B938 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTG9WG4TRR;
-				INFOPLIST_FILE = Cassini/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cassini/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uneqqee.Cassini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,7 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTG9WG4TRR;
-				INFOPLIST_FILE = Cassini/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cassini/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uneqqee.Cassini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
