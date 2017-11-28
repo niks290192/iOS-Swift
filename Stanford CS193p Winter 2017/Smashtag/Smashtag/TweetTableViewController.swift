@@ -9,7 +9,7 @@
 import UIKit
 import Twitter
 
-class TweetTableViewController: UITableViewController {
+class TweetTableViewController: UITableViewController, UITextFieldDelegate {
 
 	private var tweets = [Array<Twitter.Tweet>]() {
 		didSet {
@@ -19,6 +19,8 @@ class TweetTableViewController: UITableViewController {
 
 	var searchText:String? {
 		didSet {
+			searchTextField?.text = searchText
+			searchTextField?.resignFirstResponder()
 			tweets.removeAll()
 			tableView.reloadData()
 			searchForTweets()
@@ -49,9 +51,24 @@ class TweetTableViewController: UITableViewController {
 		return nil
 	}
 
+	@IBOutlet weak var searchTextField: UITextField! {
+		didSet {
+			  searchTextField.delegate = self
+		}
+	}
+
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		if textField == searchTextField {
+			searchText = searchTextField.text
+		}
+		return true
+	}
+
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		searchText = "#stanford"
+		tableView.estimatedRowHeight = tableView.rowHeight
+		tableView.rowHeight = UITableViewAutomaticDimension
 	}
 
     // MARK: - Table view data source
@@ -70,8 +87,9 @@ class TweetTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Tweet", for: indexPath)
 		let tweet = tweets[indexPath.section][indexPath.row]
-		cell.textLabel?.text = tweet.text
-		cell.detailTextLabel?.text = tweet.user.name
+		if let tweetCell = cell as? TweetTableViewCell {
+			tweetCell.tweet = tweet
+		}
         return cell
     }
 
