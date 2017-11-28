@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "951C2CF81FCC7F9500EC11B2"
-               BuildableName = "Smashtag.app"
-               BlueprintName = "Smashtag"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BlueprintIdentifier = "DA1365701E4F8BE000F66D3D"
+               BuildableName = "Twitter.framework"
+               BlueprintName = "Twitter"
+               ReferencedContainer = "container:Twitter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "951C2CF81FCC7F9500EC11B2"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -53,16 +44,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "951C2CF81FCC7F9500EC11B2"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BlueprintIdentifier = "DA1365701E4F8BE000F66D3D"
+            BuildableName = "Twitter.framework"
+            BlueprintName = "Twitter"
+            ReferencedContainer = "container:Twitter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,16 +62,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "951C2CF81FCC7F9500EC11B2"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BlueprintIdentifier = "DA1365701E4F8BE000F66D3D"
+            BuildableName = "Twitter.framework"
+            BlueprintName = "Twitter"
+            ReferencedContainer = "container:Twitter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
