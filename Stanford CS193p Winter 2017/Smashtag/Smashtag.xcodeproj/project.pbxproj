@@ -15,6 +15,7 @@
 		951C2D131FCD812200EC11B2 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951C2D121FCD812200EC11B2 /* TweetTableViewController.swift */; };
 		951C2D251FCD894900EC11B2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951C2D241FCD894900EC11B2 /* Twitter.framework */; };
 		951C2D261FCD894900EC11B2 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 951C2D241FCD894900EC11B2 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95455E681FCDDA4900DE7B7E /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95455E671FCDDA4900DE7B7E /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		951C2D0B1FCC7F9500EC11B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		951C2D121FCD812200EC11B2 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
 		951C2D241FCD894900EC11B2 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95455E671FCDDA4900DE7B7E /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				951C2D001FCC7F9500EC11B2 /* Main.storyboard */,
 				951C2D121FCD812200EC11B2 /* TweetTableViewController.swift */,
 				951C2D031FCC7F9500EC11B2 /* Smashtag.xcdatamodeld */,
+				95455E671FCDDA4900DE7B7E /* TweetTableViewCell.swift */,
 			);
 			path = Smashtag;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				951C2D131FCD812200EC11B2 /* TweetTableViewController.swift in Sources */,
 				951C2D051FCC7F9500EC11B2 /* Smashtag.xcdatamodeld in Sources */,
 				951C2CFD1FCC7F9500EC11B2 /* AppDelegate.swift in Sources */,
+				95455E681FCDDA4900DE7B7E /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
