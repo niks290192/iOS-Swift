@@ -27,8 +27,13 @@ class TweetTableViewCell: UITableViewCell {
 		tweetUserName?.text = tweet?.user.name
 
 		if let profileImageURL = tweet?.user.profileImageURL {
-			if let imageData = try? Data(contentsOf: profileImageURL) {
-				tweetProfileImageView?.image = UIImage(data: imageData)
+			DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+				let imageData = try? Data(contentsOf: profileImageURL)
+				if let tweetData = imageData {
+					DispatchQueue.main.async {
+						self?.tweetProfileImageView?.image = UIImage(data: tweetData)
+					}
+				}
 			}
 		} else {
 			tweetProfileImageView?.image = nil
