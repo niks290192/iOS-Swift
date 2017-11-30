@@ -20,9 +20,33 @@ class SmashTweetTableViewController: TweetTableViewController {
 	}
 
 	private func updateDatabase(with tweets:[Twitter.Tweet]) {
-		container?.performBackgroundTask { (context) in
+		container?.performBackgroundTask { [weak self] (context) in
 			for tweetInfo in tweets {
-				 
+				 _ = try? Tweet.findOrCreateTweet(matching: tweetInfo, in: context)
+			}
+			try? context.save()
+			print("done loading database")
+			self?.printDatabaseStatistics()
+		}
+
+	}
+
+	private func printDatabaseStatistics() {
+		if let context = container?.viewContext {
+			context.perform {
+				if Thread.isMainThread {
+					print("Main Thread")
+				} else {
+					print("Not a main Thread")
+				}
+				let request: NSFetchRequest<Tweet> = Tweet.fetchRequest()
+				if let tweetCount = (try? context.fetch(request))?.count {
+					print("\(tweetCount) tweets")
+				}//Ambiguous use of 'fetchRequest'
+				
+				if let tweeterCount = try? context.count(for: TwitterUser.fetchRequest()) {
+					print("\(tweeterCount) Twitter Users")
+				}
 			}
 		}
 	}

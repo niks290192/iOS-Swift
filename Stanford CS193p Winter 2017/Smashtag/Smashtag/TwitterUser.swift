@@ -13,7 +13,7 @@ import Twitter
 class TwitterUser: NSManagedObject {
 	static func findOrCreateTwitterUser(matching twitterInfo:Twitter.User, in context: NSManagedObjectContext) throws -> TwitterUser {
 		let request: NSFetchRequest<TwitterUser> = TwitterUser.fetchRequest()
-		request.predicate = NSPredicate(format: "handle = %@", twitterInfo.identifier)
+		request.predicate = NSPredicate(format: "handle = %@", twitterInfo.screenName)
 		do {
 			let matches = try context.fetch(request)
 			if matches.count > 0 {
