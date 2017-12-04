@@ -14,6 +14,26 @@ class ViewController: UIViewController {
 
 	var userIsInTheMiddleOfTyping:Bool = false
 
+
+	private func showSizeClasses() {
+		if !userIsInTheMiddleOfTyping {
+			display.textAlignment = .center
+			display.text = "width: \(traitCollection.horizontalSizeClass.rawValue)  height:  \(traitCollection.verticalSizeClass.rawValue)"
+		}
+	}
+
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		showSizeClasses()
+	}
+
+	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+		super.viewWillTransition(to: size, with: coordinator)
+		coordinator.animate(alongsideTransition: { coordinator in
+			self.showSizeClasses()
+		}, completion: nil)
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -65,8 +85,18 @@ class ViewController: UIViewController {
 			displayValue = result
 		}
 	}
+}
 
-
-
+extension UIUserInterfaceSizeClass : CustomStringConvertible {
+	public var description: String {
+		switch self {
+		case .compact:
+			return "compact"
+		case .regular:
+			return "regular"
+		case .unspecified:
+			return "??"
+		}
+	}
 }
 
