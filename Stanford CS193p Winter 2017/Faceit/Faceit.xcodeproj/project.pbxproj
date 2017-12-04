@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958A0CB61FD58EBA00B4EFDE /* BlinkingFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A0CB51FD58EBA00B4EFDE /* BlinkingFaceViewController.swift */; };
 		95A7E2421FADF93C00EB0860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7E2411FADF93C00EB0860 /* AppDelegate.swift */; };
 		95A7E2441FADF93C00EB0860 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7E2431FADF93C00EB0860 /* FaceViewController.swift */; };
 		95A7E2471FADF93C00EB0860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A7E2451FADF93C00EB0860 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		958A0CB51FD58EBA00B4EFDE /* BlinkingFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingFaceViewController.swift; sourceTree = "<group>"; };
 		95A7E23E1FADF93C00EB0860 /* Faceit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faceit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A7E2411FADF93C00EB0860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A7E2431FADF93C00EB0860 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				95A7E2431FADF93C00EB0860 /* FaceViewController.swift */,
+				958A0CB51FD58EBA00B4EFDE /* BlinkingFaceViewController.swift */,
 				95A7E2561FAF426A00EB0860 /* FacialExpression.swift */,
 				95A7E2541FADFF9200EB0860 /* FaceView.swift */,
 				95C00A6F1FC2128F0047497A /* EmotionsViewController.swift */,
@@ -162,6 +165,7 @@
 				95A7E2571FAF426A00EB0860 /* FacialExpression.swift in Sources */,
 				95ADE9061FC32F480048B938 /* VCLLoggingViewController.swift in Sources */,
 				95C00A701FC2128F0047497A /* EmotionsViewController.swift in Sources */,
+				958A0CB61FD58EBA00B4EFDE /* BlinkingFaceViewController.swift in Sources */,
 				95A7E2421FADF93C00EB0860 /* AppDelegate.swift in Sources */,
 				95A7E2551FADFF9200EB0860 /* FaceView.swift in Sources */,
 			);
