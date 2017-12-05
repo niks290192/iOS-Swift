@@ -63,28 +63,36 @@ class FaceView: UIView {
 		}
 	}
 
-	private func pathForEye(eye:Eye) -> UIBezierPath {
-		func centerOfEye(eye:Eye) -> CGPoint {
-			let eyeOffset = skullRadius / Ratios.skullRadiusToEyeOffset
-			var eyeCenter = skullCenter
-			eyeCenter.y -= eyeOffset
-			eyeCenter.x += ((eye == .left) ? -1 : 1) * eyeOffset
-			return eyeCenter
-		}
+	private lazy var leftEye: EyeView = self.createEye()
+	private lazy var rightEye: EyeView = self.createEye()
 
-		let eyeRadius = skullRadius / Ratios.skullRadiusToEyeRadius
-		let eyeCenter = centerOfEye(eye: eye)
-		let path : UIBezierPath
-		if eyesOpen {
-			path = UIBezierPath(arcCenter: eyeCenter, radius: eyeRadius, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
-		} else {
-			path = UIBezierPath()
-			path.move(to: CGPoint(x: eyeCenter.x - eyeRadius, y: eyeCenter.y))
-			path.addLine(to: CGPoint(x: eyeCenter.x + eyeRadius, y: eyeCenter.y))
-		}
-		path.lineWidth = lineWidth
-		return path
+	private func createEye() -> EyeView {
+		let eye = EyeView()
+		eye.isOpaque = false
 	}
+
+//	private func pathForEye(eye:Eye) -> UIBezierPath {
+//		func centerOfEye(eye:Eye) -> CGPoint {
+//			let eyeOffset = skullRadius / Ratios.skullRadiusToEyeOffset
+//			var eyeCenter = skullCenter
+//			eyeCenter.y -= eyeOffset
+//			eyeCenter.x += ((eye == .left) ? -1 : 1) * eyeOffset
+//			return eyeCenter
+//		}
+//
+//		let eyeRadius = skullRadius / Ratios.skullRadiusToEyeRadius
+//		let eyeCenter = centerOfEye(eye: eye)
+//		let path : UIBezierPath
+//		if eyesOpen {
+//			path = UIBezierPath(arcCenter: eyeCenter, radius: eyeRadius, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+//		} else {
+//			path = UIBezierPath()
+//			path.move(to: CGPoint(x: eyeCenter.x - eyeRadius, y: eyeCenter.y))
+//			path.addLine(to: CGPoint(x: eyeCenter.x + eyeRadius, y: eyeCenter.y))
+//		}
+//		path.lineWidth = lineWidth
+//		return path
+//	}
 
 	private var skullRadius:CGFloat {
 		return min(bounds.size.width, bounds.size.height) / 2 * scale
