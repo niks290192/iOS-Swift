@@ -63,6 +63,26 @@ class ExpressionEditorViewControllerTableViewController: UITableViewController, 
 	}
 
 
+	private func handleUnnamedFace() {
+		let alert = UIAlertController(title: "Invalid Face", message: "A Face must have name.", preferredStyle: .alert)
+		alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+			self.nameTextField?.text = alert.textFields?.first?.text
+			self.performSegue(withIdentifier: "AddEmotion", sender: nil)
+		}))
+		alert.addTextField(configurationHandler: nil)
+		present(alert, animated: true)
+	}
+
+	override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+		if identifier == "AddEmotion" , name.isEmpty {
+			handleUnnamedFace()
+			return false
+		} else {
+			return super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
+		}
+	}
+
+
 	@IBAction func cancel(_ sender: UIBarButtonItem) {
 		presentingViewController?.dismiss(animated: true)
 	}
