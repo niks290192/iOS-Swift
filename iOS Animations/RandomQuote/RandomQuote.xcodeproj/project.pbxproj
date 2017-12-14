@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9546F3B51FE1823A004F79E0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9546F3B41FE1823A004F79E0 /* APIManager.swift */; };
+		9546F3B71FE241D2004F79E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9546F3B61FE241D2004F79E0 /* Constants.swift */; };
 		95D3C2BD1FE0152300C143EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C2BC1FE0152300C143EA /* AppDelegate.swift */; };
 		95D3C2BF1FE0152300C143EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C2BE1FE0152300C143EA /* ViewController.swift */; };
 		95D3C2C21FE0152300C143EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C2C01FE0152300C143EA /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9546F3B41FE1823A004F79E0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9546F3B61FE241D2004F79E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		95D3C2B91FE0152300C143EA /* RandomQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D3C2BC1FE0152300C143EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95D3C2BE1FE0152300C143EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				95D3C2C81FE0152300C143EA /* LaunchScreen.storyboard */,
 				95D3C2CB1FE0152300C143EA /* Info.plist */,
 				95D3C2C31FE0152300C143EA /* RandomQuote.xcdatamodeld */,
+				9546F3B41FE1823A004F79E0 /* APIManager.swift */,
+				9546F3B61FE241D2004F79E0 /* Constants.swift */,
 			);
 			path = RandomQuote;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9546F3B71FE241D2004F79E0 /* Constants.swift in Sources */,
+				9546F3B51FE1823A004F79E0 /* APIManager.swift in Sources */,
 				95D3C2BF1FE0152300C143EA /* ViewController.swift in Sources */,
 				95D3C2C51FE0152300C143EA /* RandomQuote.xcdatamodeld in Sources */,
 				95D3C2BD1FE0152300C143EA /* AppDelegate.swift in Sources */,
