@@ -15,6 +15,7 @@
 		95D3C3071FE0156B00C143EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C3051FE0156B00C143EA /* LaunchScreen.storyboard */; };
 		95D3C3121FE0156B00C143EA /* SpotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C3111FE0156B00C143EA /* SpotifyTests.swift */; };
 		95D3C31D1FE0156B00C143EA /* SpotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C31C1FE0156B00C143EA /* SpotifyUITests.swift */; };
+		95ECFF931FE6567700749D6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECFF921FE6567700749D6C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		95D3C3181FE0156B00C143EA /* SpotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D3C31C1FE0156B00C143EA /* SpotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyUITests.swift; sourceTree = "<group>"; };
 		95D3C31E1FE0156B00C143EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95ECFF921FE6567700749D6C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				95D3C2F91FE0156B00C143EA /* AppDelegate.swift */,
 				95D3C2FB1FE0156B00C143EA /* ViewController.swift */,
+				95ECFF921FE6567700749D6C /* LoginViewController.swift */,
 				95D3C2FD1FE0156B00C143EA /* Main.storyboard */,
 				95D3C3031FE0156B00C143EA /* Assets.xcassets */,
 				95D3C3051FE0156B00C143EA /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95ECFF931FE6567700749D6C /* LoginViewController.swift in Sources */,
 				95D3C3021FE0156B00C143EA /* Spotify.xcdatamodeld in Sources */,
 				95D3C2FC1FE0156B00C143EA /* ViewController.swift in Sources */,
 				95D3C2FA1FE0156B00C143EA /* AppDelegate.swift in Sources */,

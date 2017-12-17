@@ -43,9 +43,53 @@ class ViewController: UIViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		
+		UIView.animate(withDuration: 1.0, animations: {
+			self.backgroundImage.alpha = 1.0
+		}, completion: nil)
+
+		UIView.animate(withDuration: 2.0, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: [], animations: {
+			self.continueButton.alpha = 1.0
+			self.continueButton.center.y -= 30
+		}) { finished in
+			self.marketingMessage(0)
+		}
 	}
 
+	private func marketingMessage(_ indexi: Int) {
+		var index:Int = indexi
+		let message = messages[index]
+		self.message.text = message
+		self.message.center.y += 30
+
+		UIView.animateKeyframes(withDuration: 10.0, delay: 0.0, options: [], animations: {
+			UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.10, animations: {
+				self.message.alpha = 0.5
+			})
+
+			UIView.addKeyframe(withRelativeStartTime: 0.10, relativeDuration: 0.05, animations: {
+				self.addKeyanimation()
+			})
+
+			UIView.addKeyframe(withRelativeStartTime: 0.90, relativeDuration: 0.05, animations: {
+				self.message.alpha = 0.0
+			})
+
+		}) { (finished) in
+			if index == self.messages.count - 1 {
+				index = 0
+			} else {
+				index = index+1
+			}
+		}
+	}
+
+	//Unary Operator "++" cannot be applied to an operand of type
+
+	private func addKeyanimation() {
+		UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.0, options: [.curveEaseOut], animations: {
+			self.message.center.y -= 30.0
+		}, completion: nil)
+	}
 
 }
 
