@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F41DE6BB1A2729DF009B38DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6BA1A2729DF009B38DF /* AppDelegate.swift */; };
+		F41DE6BD1A2729DF009B38DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6BC1A2729DF009B38DF /* ViewController.swift */; };
+		F41DE6C01A2729DF009B38DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41DE6BE1A2729DF009B38DF /* Main.storyboard */; };
+		F41DE6C21A2729DF009B38DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41DE6C11A2729DF009B38DF /* Images.xcassets */; };
+		F41DE6C51A2729DF009B38DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41DE6C31A2729DF009B38DF /* LaunchScreen.xib */; };
+		F41DE6D11A2729DF009B38DF /* CustomFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41DE6D01A2729DF009B38DF /* CustomFontTests.swift */; };
+		F4C5D4B51BCBAF9C00BF65EE /* Mohave Italics.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4AF1BCBAF9C00BF65EE /* Mohave Italics.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4B61BCBAF9C00BF65EE /* Mohave-Bold Italics.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4B01BCBAF9C00BF65EE /* Mohave-Bold Italics.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4B71BCBAF9C00BF65EE /* Mohave-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4B11BCBAF9C00BF65EE /* Mohave-Bold.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4B81BCBAF9C00BF65EE /* Mohave-SemiBold Italics.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4B21BCBAF9C00BF65EE /* Mohave-SemiBold Italics.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4B91BCBAF9C00BF65EE /* Mohave-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4B31BCBAF9C00BF65EE /* Mohave-SemiBold.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4BA1BCBAF9C00BF65EE /* Mohave.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4B41BCBAF9C00BF65EE /* Mohave.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4BE1BCBB32500BF65EE /* Hallo sans black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4BB1BCBB32500BF65EE /* Hallo sans black.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4BF1BCBB32500BF65EE /* Hallo sans light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4BC1BCBB32500BF65EE /* Hallo sans light.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4C01BCBB32500BF65EE /* Hallo sans.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4BD1BCBB32500BF65EE /* Hallo sans.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4C71BCBB47300BF65EE /* Canter Bold 3D.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4C11BCBB47300BF65EE /* Canter Bold 3D.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4C81BCBB47300BF65EE /* Canter Bold Shadow.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4C21BCBB47300BF65EE /* Canter Bold Shadow.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4C91BCBB47300BF65EE /* Canter Bold Strips.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4C31BCBB47300BF65EE /* Canter Bold Strips.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4CA1BCBB47300BF65EE /* Canter Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4C41BCBB47300BF65EE /* Canter Bold.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4CB1BCBB47300BF65EE /* Canter Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4C51BCBB47300BF65EE /* Canter Light.otf */; settings = {ASSET_TAGS = (); }; };
+		F4C5D4CC1BCBB47300BF65EE /* Canter Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4C5D4C61BCBB47300BF65EE /* Canter Outline.otf */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F41DE6CB1A2729DF009B38DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F41DE6AD1A2729DF009B38DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F41DE6B41A2729DF009B38DF;
+			remoteInfo = CustomFont;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F41DE6B51A2729DF009B38DF /* CustomFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41DE6B91A2729DF009B38DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41DE6BA1A2729DF009B38DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F41DE6BC1A2729DF009B38DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F41DE6BF1A2729DF009B38DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F41DE6C11A2729DF009B38DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F41DE6C41A2729DF009B38DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F41DE6CA1A2729DF009B38DF /* CustomFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41DE6CF1A2729DF009B38DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41DE6D01A2729DF009B38DF /* CustomFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontTests.swift; sourceTree = "<group>"; };
+		F4C5D4AF1BCBAF9C00BF65EE /* Mohave Italics.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave Italics.otf"; sourceTree = "<group>"; };
+		F4C5D4B01BCBAF9C00BF65EE /* Mohave-Bold Italics.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-Bold Italics.otf"; sourceTree = "<group>"; };
+		F4C5D4B11BCBAF9C00BF65EE /* Mohave-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-Bold.otf"; sourceTree = "<group>"; };
+		F4C5D4B21BCBAF9C00BF65EE /* Mohave-SemiBold Italics.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-SemiBold Italics.otf"; sourceTree = "<group>"; };
+		F4C5D4B31BCBAF9C00BF65EE /* Mohave-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-SemiBold.otf"; sourceTree = "<group>"; };
+		F4C5D4B41BCBAF9C00BF65EE /* Mohave.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mohave.otf; sourceTree = "<group>"; };
+		F4C5D4BB1BCBB32500BF65EE /* Hallo sans black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallo sans black.otf"; sourceTree = "<group>"; };
+		F4C5D4BC1BCBB32500BF65EE /* Hallo sans light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallo sans light.otf"; sourceTree = "<group>"; };
+		F4C5D4BD1BCBB32500BF65EE /* Hallo sans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallo sans.otf"; sourceTree = "<group>"; };
+		F4C5D4C11BCBB47300BF65EE /* Canter Bold 3D.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Canter Bold 3D.otf"; sourceTree = "<group>"; };
+		F4C5D4C21BCBB47300BF65EE /* Canter Bold Shadow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Canter Bold Shadow.otf"; sourceTree = "<group>"; };
+		F4C5D4C31BCBB47300BF65EE /* Canter Bold Strips.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Canter Bold Strips.otf"; sourceTree = "<group>"; };
+		F4C5D4C41BCBB47300BF65EE /* Canter Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Canter Bold.otf"; sourceTree = "<group>"; };
+		F4C5D4C51BCBB47300BF65EE /* Canter Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Canter Light.otf"; sourceTree = "<group>"; };
+		F4C5D4C61BCBB47300BF65EE /* Canter Outline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Canter Outline.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F41DE6B21A2729DF009B38DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41DE6C71A2729DF009B38DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F41DE6AC1A2729DF009B38DF = {
+			isa = PBXGroup;
+			children = (
+				F41DE6B71A2729DF009B38DF /* CustomFont */,
+				F41DE6CD1A2729DF009B38DF /* CustomFontTests */,
+				F41DE6B61A2729DF009B38DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F41DE6B61A2729DF009B38DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F41DE6B51A2729DF009B38DF /* CustomFont.app */,
+				F41DE6CA1A2729DF009B38DF /* CustomFontTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F41DE6B71A2729DF009B38DF /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				F4C5D4AE1BCBA7FB00BF65EE /* font */,
+				F41DE6BA1A2729DF009B38DF /* AppDelegate.swift */,
+				F41DE6BC1A2729DF009B38DF /* ViewController.swift */,
+				F41DE6BE1A2729DF009B38DF /* Main.storyboard */,
+				F41DE6C11A2729DF009B38DF /* Images.xcassets */,
+				F41DE6C31A2729DF009B38DF /* LaunchScreen.xib */,
+				F41DE6B81A2729DF009B38DF /* Supporting Files */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		F41DE6B81A2729DF009B38DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41DE6B91A2729DF009B38DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F41DE6CD1A2729DF009B38DF /* CustomFontTests */ = {
+			isa = PBXGroup;
+			children = (
+				F41DE6D01A2729DF009B38DF /* CustomFontTests.swift */,
+				F41DE6CE1A2729DF009B38DF /* Supporting Files */,
+			);
+			path = CustomFontTests;
+			sourceTree = "<group>";
+		};
+		F41DE6CE1A2729DF009B38DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41DE6CF1A2729DF009B38DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4C5D4AE1BCBA7FB00BF65EE /* font */ = {
+			isa = PBXGroup;
+			children = (
+				F4C5D4C11BCBB47300BF65EE /* Canter Bold 3D.otf */,
+				F4C5D4C21BCBB47300BF65EE /* Canter Bold Shadow.otf */,
+				F4C5D4C31BCBB47300BF65EE /* Canter Bold Strips.otf */,
+				F4C5D4C41BCBB47300BF65EE /* Canter Bold.otf */,
+				F4C5D4C51BCBB47300BF65EE /* Canter Light.otf */,
+				F4C5D4C61BCBB47300BF65EE /* Canter Outline.otf */,
+				F4C5D4AF1BCBAF9C00BF65EE /* Mohave Italics.otf */,
+				F4C5D4B01BCBAF9C00BF65EE /* Mohave-Bold Italics.otf */,
+				F4C5D4B11BCBAF9C00BF65EE /* Mohave-Bold.otf */,
+				F4C5D4B21BCBAF9C00BF65EE /* Mohave-SemiBold Italics.otf */,
+				F4C5D4B31BCBAF9C00BF65EE /* Mohave-SemiBold.otf */,
+				F4C5D4B41BCBAF9C00BF65EE /* Mohave.otf */,
+				F4C5D4BB1BCBB32500BF65EE /* Hallo sans black.otf */,
+				F4C5D4BC1BCBB32500BF65EE /* Hallo sans light.otf */,
+				F4C5D4BD1BCBB32500BF65EE /* Hallo sans.otf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F41DE6B41A2729DF009B38DF /* CustomFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41DE6D41A2729DF009B38DF /* Build configuration list for PBXNativeTarget "CustomFont" */;
+			buildPhases = (
+				F41DE6B11A2729DF009B38DF /* Sources */,
+				F41DE6B21A2729DF009B38DF /* Frameworks */,
+				F41DE6B31A2729DF009B38DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomFont;
+			productName = CustomFont;
+			productReference = F41DE6B51A2729DF009B38DF /* CustomFont.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F41DE6C91A2729DF009B38DF /* CustomFontTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41DE6D71A2729DF009B38DF /* Build configuration list for PBXNativeTarget "CustomFontTests" */;
+			buildPhases = (
+				F41DE6C61A2729DF009B38DF /* Sources */,
+				F41DE6C71A2729DF009B38DF /* Frameworks */,
+				F41DE6C81A2729DF009B38DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F41DE6CC1A2729DF009B38DF /* PBXTargetDependency */,
+			);
+			name = CustomFontTests;
+			productName = CustomFontTests;
+			productReference = F41DE6CA1A2729DF009B38DF /* CustomFontTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F41DE6AD1A2729DF009B38DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = AppCoda;
+				TargetAttributes = {
+					F41DE6B41A2729DF009B38DF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F41DE6C91A2729DF009B38DF = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F41DE6B41A2729DF009B38DF;
+					};
+				};
+			};
+			buildConfigurationList = F41DE6B01A2729DF009B38DF /* Build configuration list for PBXProject "CustomFont" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F41DE6AC1A2729DF009B38DF;
+			productRefGroup = F41DE6B61A2729DF009B38DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F41DE6B41A2729DF009B38DF /* CustomFont */,
+				F41DE6C91A2729DF009B38DF /* CustomFontTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F41DE6B31A2729DF009B38DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41DE6C01A2729DF009B38DF /* Main.storyboard in Resources */,
+				F4C5D4C81BCBB47300BF65EE /* Canter Bold Shadow.otf in Resources */,
+				F4C5D4CC1BCBB47300BF65EE /* Canter Outline.otf in Resources */,
+				F4C5D4BA1BCBAF9C00BF65EE /* Mohave.otf in Resources */,
+				F4C5D4C01BCBB32500BF65EE /* Hallo sans.otf in Resources */,
+				F4C5D4CA1BCBB47300BF65EE /* Canter Bold.otf in Resources */,
+				F4C5D4B61BCBAF9C00BF65EE /* Mohave-Bold Italics.otf in Resources */,
+				F4C5D4CB1BCBB47300BF65EE /* Canter Light.otf in Resources */,
+				F4C5D4C71BCBB47300BF65EE /* Canter Bold 3D.otf in Resources */,
+				F4C5D4B71BCBAF9C00BF65EE /* Mohave-Bold.otf in Resources */,
+				F41DE6C51A2729DF009B38DF /* LaunchScreen.xib in Resources */,
+				F4C5D4B51BCBAF9C00BF65EE /* Mohave Italics.otf in Resources */,
+				F4C5D4C91BCBB47300BF65EE /* Canter Bold Strips.otf in Resources */,
+				F41DE6C21A2729DF009B38DF /* Images.xcassets in Resources */,
+				F4C5D4BE1BCBB32500BF65EE /* Hallo sans black.otf in Resources */,
+				F4C5D4B91BCBAF9C00BF65EE /* Mohave-SemiBold.otf in Resources */,
+				F4C5D4BF1BCBB32500BF65EE /* Hallo sans light.otf in Resources */,
+				F4C5D4B81BCBAF9C00BF65EE /* Mohave-SemiBold Italics.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41DE6C81A2729DF009B38DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F41DE6B11A2729DF009B38DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41DE6BD1A2729DF009B38DF /* ViewController.swift in Sources */,
+				F41DE6BB1A2729DF009B38DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41DE6C61A2729DF009B38DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41DE6D11A2729DF009B38DF /* CustomFontTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F41DE6CC1A2729DF009B38DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F41DE6B41A2729DF009B38DF /* CustomFont */;
+			targetProxy = F41DE6CB1A2729DF009B38DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F41DE6BE1A2729DF009B38DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F41DE6BF1A2729DF009B38DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F41DE6C31A2729DF009B38DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F41DE6C41A2729DF009B38DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F41DE6D21A2729DF009B38DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F41DE6D31A2729DF009B38DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F41DE6D51A2729DF009B38DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F41DE6D61A2729DF009B38DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F41DE6D81A2729DF009B38DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomFont.app/CustomFont";
+			};
+			name = Debug;
+		};
+		F41DE6D91A2729DF009B38DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomFont.app/CustomFont";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F41DE6B01A2729DF009B38DF /* Build configuration list for PBXProject "CustomFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41DE6D21A2729DF009B38DF /* Debug */,
+				F41DE6D31A2729DF009B38DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41DE6D41A2729DF009B38DF /* Build configuration list for PBXNativeTarget "CustomFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41DE6D51A2729DF009B38DF /* Debug */,
+				F41DE6D61A2729DF009B38DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41DE6D71A2729DF009B38DF /* Build configuration list for PBXNativeTarget "CustomFontTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41DE6D81A2729DF009B38DF /* Debug */,
+				F41DE6D91A2729DF009B38DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F41DE6AD1A2729DF009B38DF /* Project object */;
+}
