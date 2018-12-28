@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CustomFont" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UdA-mp-Pay">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you add values to the world, the world will give more values than you can imagine." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfE-c6-UKR">
+                                <rect key="frame" x="36" y="37" width="527" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't be discouraged. It's often the last key in the bunch that opens the lock." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2I-cZ-vez">
+                                <rect key="frame" x="36" y="127" width="527" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't tell people your dream. Show them." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIL-ea-GQt">
+                                <rect key="frame" x="36" y="217" width="533" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z2I-cZ-vez" firstAttribute="top" secondItem="QfE-c6-UKR" secondAttribute="bottom" constant="30" id="19l-tx-5Kq"/>
+                            <constraint firstItem="UdA-mp-Pay" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="2Oo-8t-h1a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z2I-cZ-vez" secondAttribute="trailing" constant="17" id="33u-ZK-DI1"/>
+                            <constraint firstItem="QfE-c6-UKR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="6QH-NN-HnI"/>
+                            <constraint firstItem="QfE-c6-UKR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="6no-AA-bam"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UdA-mp-Pay" secondAttribute="bottom" id="BeN-bb-frM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QfE-c6-UKR" secondAttribute="trailing" constant="17" id="Bvx-Kj-CQr"/>
+                            <constraint firstItem="z2I-cZ-vez" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="DAh-cq-8Q0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oIL-ea-GQt" secondAttribute="trailing" constant="11" id="Fek-VS-5ld"/>
+                            <constraint firstAttribute="trailing" secondItem="UdA-mp-Pay" secondAttribute="trailing" id="bl6-Vo-TRJ"/>
+                            <constraint firstItem="oIL-ea-GQt" firstAttribute="top" secondItem="z2I-cZ-vez" secondAttribute="bottom" constant="30" id="cQK-Vp-81Q"/>
+                            <constraint firstItem="oIL-ea-GQt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="fM6-Uz-e86"/>
+                            <constraint firstItem="UdA-mp-Pay" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vPv-iS-Uly"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="QfE-c6-UKR" id="8kf-gu-FTQ"/>
+                        <outlet property="label2" destination="z2I-cZ-vez" id="I3L-n2-yCs"/>
+                        <outlet property="label3" destination="oIL-ea-GQt" id="UTb-hm-aJ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="640" height="335"/>
+    </resources>
+</document>
