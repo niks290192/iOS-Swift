@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="VisualEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P8s-SN-4kF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E3-xE-4tS" userLabel="Login View">
+                                <rect key="frame" x="161" y="50" width="279" height="266"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Doodle Icons-12" translatesAutoresizingMaskIntoConstraints="NO" id="3b8-Nj-Qlt">
+                                        <rect key="frame" x="114" y="8" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Kn3-sW-0iD"/>
+                                            <constraint firstAttribute="height" constant="50" id="sjG-oD-m03"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to AppCoda" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhD-dB-Lrn">
+                                        <rect key="frame" x="56" y="72" width="166" height="26"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XyG-kj-AU9">
+                                        <rect key="frame" x="14" y="106" width="249" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ve3-Dv-krQ">
+                                        <rect key="frame" x="14" y="144" width="249" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kx-jd-tdB">
+                                        <rect key="frame" x="14" y="187" width="249" height="36"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.98548406362533569" green="0.79335731267929077" blue="0.15890160202980042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="249" id="37s-hu-No1"/>
+                                            <constraint firstAttribute="height" constant="36" id="a57-JW-4ve"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Sign in">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nog-E6-pRU" userLabel="Separator View">
+                                        <rect key="frame" x="14" y="139" width="249" height="1"/>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H26-mu-viL">
+                                        <rect key="frame" x="70" y="235" width="136" height="18"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XyG-kj-AU9" secondAttribute="trailing" constant="16" id="3uL-lB-a7P"/>
+                                    <constraint firstItem="XyG-kj-AU9" firstAttribute="leading" secondItem="0E3-xE-4tS" secondAttribute="leading" constant="14" id="4mJ-sN-eeG"/>
+                                    <constraint firstAttribute="centerX" secondItem="3b8-Nj-Qlt" secondAttribute="centerX" constant="0.5" id="74g-xu-1nZ"/>
+                                    <constraint firstAttribute="width" constant="279" id="8E7-7d-HGK"/>
+                                    <constraint firstAttribute="height" constant="266" id="8Lp-PI-yPX"/>
+                                    <constraint firstItem="XyG-kj-AU9" firstAttribute="top" secondItem="HhD-dB-Lrn" secondAttribute="bottom" constant="8" id="9qk-p6-Sr8"/>
+                                    <constraint firstItem="ve3-Dv-krQ" firstAttribute="centerX" secondItem="0kx-jd-tdB" secondAttribute="centerX" id="CJF-Ea-E9h"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="top" secondItem="XyG-kj-AU9" secondAttribute="bottom" constant="3" id="Cpe-5Z-3Y2"/>
+                                    <constraint firstItem="3b8-Nj-Qlt" firstAttribute="top" secondItem="0E3-xE-4tS" secondAttribute="top" constant="8" id="DL7-DZ-bGg"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="top" secondItem="0E3-xE-4tS" secondAttribute="top" constant="139" id="GfK-qg-rTY"/>
+                                    <constraint firstItem="XyG-kj-AU9" firstAttribute="centerX" secondItem="HhD-dB-Lrn" secondAttribute="centerX" constant="-1" id="HTW-Yc-ZYk"/>
+                                    <constraint firstItem="ve3-Dv-krQ" firstAttribute="leading" secondItem="0E3-xE-4tS" secondAttribute="leading" constant="14" id="Jq3-fJ-Upd"/>
+                                    <constraint firstItem="HhD-dB-Lrn" firstAttribute="centerX" secondItem="3b8-Nj-Qlt" secondAttribute="centerX" constant="0.5" id="KBH-BQ-4nl"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="leading" secondItem="XyG-kj-AU9" secondAttribute="leading" id="L96-fu-g6C"/>
+                                    <constraint firstItem="0kx-jd-tdB" firstAttribute="top" secondItem="ve3-Dv-krQ" secondAttribute="bottom" constant="13" id="MNf-CE-jQ6"/>
+                                    <constraint firstItem="ve3-Dv-krQ" firstAttribute="top" secondItem="nog-E6-pRU" secondAttribute="bottom" constant="4" id="NS3-ok-ks9"/>
+                                    <constraint firstAttribute="bottom" secondItem="H26-mu-viL" secondAttribute="bottom" constant="13" id="NVG-x0-qr2"/>
+                                    <constraint firstItem="0kx-jd-tdB" firstAttribute="leading" secondItem="0E3-xE-4tS" secondAttribute="leading" constant="14" id="QyG-V1-m3j"/>
+                                    <constraint firstItem="H26-mu-viL" firstAttribute="centerX" secondItem="0kx-jd-tdB" secondAttribute="centerX" constant="-0.5" id="Tpr-ER-K8m"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="top" secondItem="0E3-xE-4tS" secondAttribute="top" constant="139" id="WYR-Zg-C2b"/>
+                                    <constraint firstAttribute="trailing" secondItem="0kx-jd-tdB" secondAttribute="trailing" constant="16" id="XF6-jK-icN"/>
+                                    <constraint firstItem="3b8-Nj-Qlt" firstAttribute="width" secondItem="0E3-xE-4tS" secondAttribute="width" id="ZGv-oo-zRz"/>
+                                    <constraint firstItem="H26-mu-viL" firstAttribute="top" secondItem="0kx-jd-tdB" secondAttribute="bottom" constant="12" id="bar-Ch-YEV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ve3-Dv-krQ" secondAttribute="trailing" constant="16" id="cOa-4Z-CMc"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="top" secondItem="XyG-kj-AU9" secondAttribute="bottom" constant="3" id="gjs-Fd-j7s"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="leading" secondItem="0kx-jd-tdB" secondAttribute="leading" id="jcm-eB-7fG"/>
+                                    <constraint firstItem="nog-E6-pRU" firstAttribute="trailing" secondItem="XyG-kj-AU9" secondAttribute="trailing" id="kgr-SP-RUn"/>
+                                    <constraint firstAttribute="bottom" secondItem="nog-E6-pRU" secondAttribute="bottom" constant="126" id="pPg-At-EhI"/>
+                                    <constraint firstItem="HhD-dB-Lrn" firstAttribute="top" secondItem="3b8-Nj-Qlt" secondAttribute="bottom" constant="14" id="rD9-d0-O21"/>
+                                    <constraint firstItem="ve3-Dv-krQ" firstAttribute="top" secondItem="XyG-kj-AU9" secondAttribute="bottom" constant="8" symbolic="YES" id="s2q-m7-STQ"/>
+                                    <constraint firstItem="ve3-Dv-krQ" firstAttribute="top" secondItem="nog-E6-pRU" secondAttribute="bottom" constant="4" id="xTu-Vf-KlY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZGv-oo-zRz"/>
+                                        <exclude reference="CJF-Ea-E9h"/>
+                                        <exclude reference="QyG-V1-m3j"/>
+                                        <exclude reference="XF6-jK-icN"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P8s-SN-4kF" secondAttribute="trailing" id="B3Z-Qp-6To"/>
+                            <constraint firstItem="P8s-SN-4kF" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="FM2-ls-ISw"/>
+                            <constraint firstItem="P8s-SN-4kF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SNX-Ll-Mb0"/>
+                            <constraint firstItem="0E3-xE-4tS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="Yvk-rS-mAH"/>
+                            <constraint firstAttribute="centerX" secondItem="0E3-xE-4tS" secondAttribute="centerX" id="mfm-rx-Ieh"/>
+                            <constraint firstItem="P8s-SN-4kF" firstAttribute="centerX" secondItem="0E3-xE-4tS" secondAttribute="centerX" id="n96-DG-Bkk"/>
+                            <constraint firstItem="P8s-SN-4kF" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="qJg-P0-JEC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="P8s-SN-4kF" id="9dF-Vl-Yes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Doodle Icons-12" width="2133" height="2133"/>
+    </resources>
+</document>
