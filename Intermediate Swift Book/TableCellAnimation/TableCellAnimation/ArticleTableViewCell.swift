@@ -2,8 +2,8 @@
 //  ArticleTableViewCell.swift
 //  TableCellAnimation
 //
-//  Created by Simon Ng on 18/11/14.
-//  Copyright (c) 2014 AppCoda. All rights reserved.
+//  Created by Simon Ng on 3/10/2016.
+//  Copyright © 2016 AppCoda. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ArticleTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

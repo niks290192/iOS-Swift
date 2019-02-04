@@ -2,31 +2,33 @@
 //  ArticleTableViewController.swift
 //  TableCellAnimation
 //
-//  Created by Simon Ng on 18/11/14.
-//  Copyright (c) 2014 AppCoda. All rights reserved.
+//  Created by Simon Ng on 3/10/2016.
+//  Copyright © 2016 AppCoda. All rights reserved.
 //
 
 import UIKit
 
 class ArticleTableViewController: UITableViewController {
-    let postTitles = ["Use Background Transfer Service To Download File in Background",
-    "First Time App Developer Success Stories Part 1",
-    "Adding Animated Effects to iOS App Using UIKit Dynamics",
-    "Working with Game Center and Game Kit Framework",
-    "How to Access iOS Calendar, Events and Reminders",
-    "Creating Circular Profile Image"];
-    let postImages = ["bts.jpg", "first-time-developer.jpg", "uidynamics.jpg", "gamecenter.jpg", "event-kit.jpg", "circular-image.jpg"];
-
-    var postShown = [Bool](count: 6, repeatedValue: false)
     
+    let postTitles = ["Use Background Transfer Service To Download File in Background",
+                      "Face Detection in iOS Using Core Image",
+                      "Building a Speech-to-Text App Using Speech Framework in iOS 10",
+                      "Building Your First Web App in Swift Using Vapor",
+                      "Creating Gradient Colors Using CAGradientLayer",
+                      "A Beginner's Guide to CALayer"]
+    let postImages = ["imessage-sticker-pack", "face-detection-featured", "speech-kit-featured", "vapor-web-framework", "cagradientlayer-demo", "calayer-featured"]
+    
+    // Solution to exercise
+    var postShown = [Bool](repeating: false, count: 6)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.estimatedRowHeight = 258.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .automatic
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,28 +38,28 @@ class ArticleTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // Return the number of sections.
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // Return the number of rows in the section.
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postTitles.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ArticleTableViewCell
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ArticleTableViewCell
+        
         // Configure the cell...
-        cell.titleLabel.text = postTitles[indexPath.row]
-        cell.postImageView.image = UIImage(named: postImages[indexPath.row])
+        cell.titleLabel.text = postTitles[(indexPath as NSIndexPath).row]
+        cell.postImageView.image = UIImage(named: postImages[(indexPath as NSIndexPath).row])
 
         return cell
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    // MARK: - UITableViewDelegate Methods
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         // Determine if the post is displayed. If yes, we just return and no animation will be created
         if postShown[indexPath.row] {
@@ -66,22 +68,15 @@ class ArticleTableViewController: UITableViewController {
         
         // Indicate the post has been displayed, so the animation won't be displayed again
         postShown[indexPath.row] = true
-
+        
         // Define the initial state (Before the animation)
-        let rotationAngleInRadians = 90.0 * CGFloat(M_PI/180.0)
-        let rotationTransform = CATransform3DMakeRotation(rotationAngleInRadians, 0, 0, 1)
+//        let rotationAngleInRadians = 90.0 * CGFloat(Double.pi/180.0)
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 100, 0)
         cell.layer.transform = rotationTransform
         
         // Define the final state (After the animation)
-        UIView.animateWithDuration(1.0, animations: { cell.layer.transform = CATransform3DIdentity })
-        
-//        // Define the initial state (Before the animation)
-//        let rotationAngleInRadians = 90.0 * CGFloat(M_PI/180.0)
-//        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 100, 0)
-//        cell.layer.transform = rotationTransform
-//        
-//        // Define the final state (After the animation)
-//        UIView.animateWithDuration(1.0, animations: { cell.layer.transform = CATransform3DIdentity })
+        UIView.animate(withDuration: 1.0, animations: { cell.layer.transform = CATransform3DIdentity })
     }
+    
 
 }
